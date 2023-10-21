@@ -1,0 +1,25 @@
+ERROR - 2023-10-17 07:22:15 --> Duplicate entry 'ban mobil' for key 'BARANG'
+CRITICAL - 2023-10-17 20:53:46 --> Use of undefined constant PUBLIC_PATH - assumed 'PUBLIC_PATH' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 173, Array)
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->aksi_change_website_settings()
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-10-17 22:26:49 --> Too few arguments to function App\Models\M_model::ultraOderBy(), 5 passed in C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php on line 697 and exactly 8 expected
+#0 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(697): App\Models\M_model->ultraOderBy('barang_masuk', 'barang', 'user', 'barang_masuk.id...', 'tanggal_barang_...')
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->incoming_items()
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-10-17 22:27:16 --> Too few arguments to function App\Models\M_model::superOderBy(), 5 passed in C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php on line 697 and exactly 6 expected
+#0 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(697): App\Models\M_model->superOderBy('barang_masuk', 'barang', 'user', 'barang_masuk.id...', 'tanggal_barang_...')
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->incoming_items()
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

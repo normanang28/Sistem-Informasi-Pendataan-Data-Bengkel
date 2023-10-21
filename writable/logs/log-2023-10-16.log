@@ -1,0 +1,79 @@
+CRITICAL - 2023-10-16 02:33:49 --> Invalid file: header.php
+#0 C:\xampp\htdocs\pendataan_bengkel\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\pendataan_bengkel\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(9): view('header')
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-10-16 02:34:00 --> Invalid file: header.php
+#0 C:\xampp\htdocs\pendataan_bengkel\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\pendataan_bengkel\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(9): view('header')
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2023-10-16 07:53:45 --> Class 'App\Controllers\M_model' not found
+#0 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->employee()
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2023-10-16 07:54:13 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2023-10-16 07:54:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 C:\xampp\htdocs\pendataan_bengkel\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\pendataan_bengkel\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\pendataan_bengkel\app\Models\M_model.php(364): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(23): App\Models\M_model->fusionOderBy('karyawan', 'user', 'karyawan.id_use...', 'tanggal_karyawa...')
+#4 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->employee()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2023-10-16 08:27:10 --> Unknown column 'no_telp' in 'field list'
+ERROR - 2023-10-16 08:28:47 --> Column 'nama_pengguna' cannot be null
+ERROR - 2023-10-16 08:59:21 --> Column 'nip' cannot be null
+ERROR - 2023-10-16 09:01:41 --> Column 'nip' cannot be null
+ERROR - 2023-10-16 09:28:49 --> Table 'pendataan_bengkel.anggota' doesn't exist
+CRITICAL - 2023-10-16 09:28:49 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(75): App\Models\M_model->getarray('anggota', Array)
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->aksi_login()
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2023-10-16 09:31:58 --> Call to a member function getRow() on null
+#0 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->user_search()
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2023-10-16 20:29:14 --> Duplicate entry '112345678' for key 'NIP'
+ERROR - 2023-10-16 22:14:35 --> Unknown column 'id_menu' in 'where clause'
+CRITICAL - 2023-10-16 22:14:35 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(475): App\Models\M_model->detail('barang', 'user', 'barang.maker_ba...', Array)
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->detail_items('1')
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2023-10-16 22:14:52 --> Unknown column 'id_menu' in 'where clause'
+CRITICAL - 2023-10-16 22:14:52 --> Call to a member function getRow() on bool
+#0 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(475): App\Models\M_model->detail('barang', 'user', 'barang.maker_ba...', Array)
+#1 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->detail_items('1')
+#2 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

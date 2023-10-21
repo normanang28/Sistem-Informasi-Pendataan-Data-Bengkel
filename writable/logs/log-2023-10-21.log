@@ -1,0 +1,15 @@
+CRITICAL - 2023-10-21 01:24:17 --> Invalid file: header.php
+#0 C:\xampp\htdocs\pendataan_bengkel\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 C:\xampp\htdocs\pendataan_bengkel\system\Common.php(1089): CodeIgniter\View\View->render('header', Array, true)
+#2 C:\xampp\htdocs\pendataan_bengkel\app\Controllers\Home.php(2394): view('header', Array)
+#3 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(832): App\Controllers\Home->profile()
+#4 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\pendataan_bengkel\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\pendataan_bengkel\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\pendataan_bengkel\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2023-10-21 01:26:37 --> Unknown column 'id_log_user' in 'field list'
+ERROR - 2023-10-21 01:27:23 --> Unknown column 'id_log_user' in 'field list'
+ERROR - 2023-10-21 01:41:12 --> Unknown column 'id_anggota_user' in 'where clause'
+ERROR - 2023-10-21 01:42:09 --> Unknown column 'id_anggota_user' in 'where clause'
+ERROR - 2023-10-21 01:42:52 --> Unknown column 'id_anggota_user' in 'where clause'
